@@ -38,6 +38,10 @@
   gap: 32px;
 }
 
+.footer-informacoes a:hover {
+  color: var(--w);
+}
+
 /* Responsivo */
 
 @media (max-width: 800px) {
