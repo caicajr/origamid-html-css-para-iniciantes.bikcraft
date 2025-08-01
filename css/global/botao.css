@@ -15,3 +15,19 @@
   background: var(--c10);
   color: var(--c4);
 }
+
+.botao-amarelo:hover {
+  background: linear-gradient(to top, #F2A50C, var(--p2));
+}
+
+.botao-cinza:hover {
+  background: var(--c9);
+}
+
+@media (max-width: 600px) {
+  [class^='botao'] {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+
+}
