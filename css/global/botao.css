@@ -1,0 +1,17 @@
+[class^='botao'] {
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.1);
+  font: var(--font-1-m-b);
+}
+
+.botao-amarelo {
+  background: linear-gradient(to bottom, #FFBF00, #F2A50C);
+  color: var(--p5);
+}
+
+.botao-cinza {
+  background: var(--c10);
+  color: var(--c4);
+}

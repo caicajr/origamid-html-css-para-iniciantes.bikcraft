@@ -1,3 +1,7 @@
+:root{
+  --font-1-m-b: 600 1.125rem/1.333 "Poppins", sans-serif;
+}
+
 .font-1-xxl{
   font: 600 4rem/1.125 "Poppins", sans-serif;
 }
@@ -25,7 +29,7 @@
 }
 
 .font-1-m-b{
-  font: 600 1.125rem/1.333 "Poppins", sans-serif;
+  font: var(--font-1-m-b);
 }
 
 .font-2-m{
