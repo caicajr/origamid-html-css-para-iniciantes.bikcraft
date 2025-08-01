@@ -1,21 +1,31 @@
 :root{
+  --font-1-xxl: 600 4rem/1.125 "Poppins", sans-serif;
+  --font-1-xl: 600 2rem/1.25 "Poppins", sans-serif;
+  --font-1-l: 400 1.5rem/1.5 "Poppins", sans-serif;
+  --font-2-l: 400 1.5rem/1.5 "Roboto", sans-serif;
+  --font-1-m: 400 1.125rem/1.333 "Poppins", sans-serif;
   --font-1-m-b: 600 1.125rem/1.333 "Poppins", sans-serif;
+  --font-2-m: 500 1.125rem/1.333 "Roboto", sans-serif;
+  --font-1-s: 400 1rem/1.5 "Poppins", sans-serif;
+  --font-2-s: 400 1rem/1.5 "Roboto", sans-serif;
+  --font-2-xs: 400 0.875rem/1.43 "Roboto", sans-serif;
+  --font-1-xs: 600 0.75rem/1.333 "Poppins", sans-serif;
 }
 
 .font-1-xxl{
-  font: 600 4rem/1.125 "Poppins", sans-serif;
+  font: var(--font-1-xxl);
 }
 
 .font-1-xl{
-  font: 600 2rem/1.25 "Poppins", sans-serif;
+  font: var(--font-1-xl);
 }
 
 .font-1-l{
-  font: 400 1.5rem/1.5 "Poppins", sans-serif;
+  font: var(--font-1-l);
 }
 
 .font-2-l{
-  font: 400 1.5rem/1.5 "Roboto", sans-serif;
+  font: var(--font-2-l);
 }
 
 .font-2-l-b{
@@ -25,7 +35,7 @@
 }
 
 .font-1-m{
-  font: 400 1.125rem/1.333 "Poppins", sans-serif;
+  font: var(--font-1-m);
 }
 
 .font-1-m-b{
@@ -33,26 +43,41 @@
 }
 
 .font-2-m{
-  font: 500 1.125rem/1.333 "Roboto", sans-serif;
+  font: var(--font-2-m);
 }
 
 .font-1-s{
-  font: 400 1rem/1.5 "Poppins", sans-serif;
+  font: var(--font-1-s);
 }
 
 .font-2-s{
-  font: 400 1rem/1.5 "Roboto", sans-serif;
+  font: var(--font-2-s);
 }
 
 .font-2-xs{
-  font: 400 0.875rem/1.43 "Roboto", sans-serif;
+  font: var(--font-2-xs);
 }
 
 .font-1-xs{
-  font: 600 0.75rem/1.333 "Poppins", sans-serif;
+  font: var(--font-1-xs);
 }
 
 .font-2-m-b{
   font: 500 1.125rem/1.78 "Roboto", sans-serif;
   letter-spacing: 1.5%;
+}
+  
+@media (max-width: 1200px) {
+  .font-1-xxl {
+    font-size: 3rem;
+  }
+  .font-2-l {
+    font-size: 1.125rem;
+  }
+} 
+
+@media (max-width: 800px) {
+  .font-1-xxl {
+    font-size: 2rem;
+  }
 }
