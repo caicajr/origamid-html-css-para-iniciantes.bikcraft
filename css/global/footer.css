@@ -24,7 +24,9 @@
   margin-bottom: 16px;
 }
 
-.footer-contato ul:not(:last-child)::after{
+/* .footer-contato > :not(:last-child):not(:first-child)::after{ */
+/* .footer-contato ul:not(:last-child)::after{ */
+.footer-decorativo::after{
   content: "";
   display: block;
   width: 100%;
@@ -33,7 +35,7 @@
   margin-bottom: 16px;
 }
 
-.footer-contato ul:last-child {
+.footer-redes-sociais {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
@@ -59,7 +61,7 @@
   .footer {
     grid-template-columns: 1fr;
   }
-  .footer-contato ul:not(:last-child)::after {
+  .footer-decorativo::after{
     max-width: 75%;
   }
 }
