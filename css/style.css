@@ -3,12 +3,12 @@
 @import './global/global.css';
 @import './global/header.css';
 @import './global/footer.css';
-@import './global/botao.css';
 
 
 /* Utilidades */
 @import './utilidades/cores.css';
 @import './utilidades/fontes.css';
+@import './utilidades/botao.css';
 
 
 /* Home */
