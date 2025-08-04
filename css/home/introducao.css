@@ -13,6 +13,10 @@
   align-items: center;
 }
 
+.intro-principal {
+  margin-bottom: 120px;
+}
+
 .intro-principal h1 {
   max-width: 25ch;
 }
@@ -26,12 +30,19 @@
   object-fit:cover;
 }
 
-@media (min-width: 1320px) {
-  .introducao {
+/* 1320 = 1200px do conteudo + 80px da imagem a mais 
+        + 40px do padding à direita */
+@media (min-width: 1320px) { 
+  .img-introducao {
+    margin-right: -80px;
+  }
+
+  /* Solução antiga */
+  /* .introducao {
     max-width: 1320px;
     grid-template-columns: 6fr 7fr;
     padding-left: 60px; 
-  }
+  } */
 }
 
 @media (max-width: 800px) {
@@ -41,6 +52,9 @@
   .introducao {
     padding-top: 42px;
     grid-template-columns: 1fr;
+  }
+  .intro-principal {
+    margin-bottom: 0px;
   }
   .img-introducao img{
     content: url("../../img/bicicleta/nimbus1.jpg");
