@@ -1,0 +1,61 @@
+.home-bicicletas {
+  padding: 120px 20px 0;
+  box-sizing: border-box;
+}
+
+.home-bic-titulo {
+  margin-bottom: 40px;
+}
+
+.home-carrossel {
+  max-width: 1460px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  display: flex;
+  overflow: auto;
+  gap: 40px;
+}
+
+.home-carrossel-item {
+  min-width: 280px;
+}
+
+/* Serve para o tab alinhar corretamente */
+.home-carrossel-item a {
+  display: block;
+}
+
+.home-carrossel-item .decorativo-1::before{
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+  transition: 0.3s;
+}
+
+.home-carrossel-item img{
+  margin-bottom: 16px;
+}
+
+.home-carrossel-item h3 {
+  margin-bottom: 8px;
+}
+
+.home-carrossel-item span {
+  margin-left: 20px;
+}
+
+/* Animações */
+.home-carrossel-item:hover .decorativo-1::before{
+  padding-right: 12px;
+}
+
+/* Responsivo */
+
+@media (max-width: 800px) {
+  .home-bicicletas {
+    padding-top: 60px;
+  }
+  .home-carrossel {
+    gap: 20px;
+  }
+}
