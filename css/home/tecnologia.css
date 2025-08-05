@@ -83,12 +83,19 @@
 
 /* Responsividade */
 @media (max-width: 800px) {
+  .tecnologia-bg {
+    background: var(--c11);
+  }
+  .tecnologia {
+    grid-template-columns: 1fr;   
+  }
+  .tecnologia-principal {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
   .tecnologia-img {
     display: none;
   } 
-  .tecnologia {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media (max-width: 600px) {
