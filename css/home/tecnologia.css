@@ -1,0 +1,98 @@
+.tecnologia-bg {
+  background: linear-gradient(#FFFFFF 80px, var(--c11) 80px, var(--c11) calc(100% - 80px), #FFFFFF calc(100% - 80px));
+}
+
+.tecnologia {
+  margin-top: 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.tecnologia-img {
+  align-self: stretch;
+}
+.tecnologia-img img{
+  height: 100%;
+  object-fit: cover;
+  object-position: center left;
+}
+
+.tecnologia-principal {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+.tecnologia-principal h2, .tecnologia-principal>p {
+  margin-bottom: 20px;
+}
+
+.tecnologia-principal h3 {
+  margin-bottom: 32px;
+}
+
+.tecnologia-principal a {
+  display: inline-block;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.tecnologia-principal a::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--p1);
+}
+
+.tecnologia-descricao {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.tecnologia-descricao li {
+  flex: 1;
+}
+
+.tecnologia-descricao h4::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 8px;
+  background: url('../../img/icones/eletrica.svg');
+}
+
+.tecnologia-descricao li:not(:first-child) h4::before {
+  background: url('../../img/icones/rastreador.svg');
+}
+
+.tecnologia-descricao h4 {
+  margin-bottom: 8px;
+}
+
+/* Animações */
+.tecnologia-principal a:hover {
+  color: var(--w);
+}
+.tecnologia-principal a:hover::after{
+  background-color: var(--w);
+}
+
+/* Responsividade */
+@media (max-width: 800px) {
+  .tecnologia-img {
+    display: none;
+  } 
+  .tecnologia {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .tecnologia-descricao > :nth-child(2){
+    flex: 0 0 100%;
+  }
+}
