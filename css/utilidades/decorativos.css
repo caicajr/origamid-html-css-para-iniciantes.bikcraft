@@ -1,0 +1,7 @@
+.decorativo-1::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--p1);
+}
