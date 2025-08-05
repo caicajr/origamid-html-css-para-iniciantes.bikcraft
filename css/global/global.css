@@ -5,4 +5,9 @@ img {
 
 a {
   text-decoration: none;
+  color: inherit;
+}
+
+img[src$=".jpg"] {
+  border-radius: 5px;
 }
