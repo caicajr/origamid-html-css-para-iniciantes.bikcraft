@@ -32,7 +32,9 @@
   transition: 0.3s;
 }
 
+/* Container da imagem */
 .home-carrossel-item a > div:first-child{
+  border-radius: 5px;
   margin-bottom: 16px;
 }
 
