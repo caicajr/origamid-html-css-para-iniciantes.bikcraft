@@ -32,7 +32,7 @@
   transition: 0.3s;
 }
 
-.home-carrossel-item img{
+.home-carrossel-item a > div:first-child{
   margin-bottom: 16px;
 }
 
@@ -47,6 +47,17 @@
 /* Animações */
 .home-carrossel-item:hover .decorativo-1::before{
   padding-right: 12px;
+}
+
+
+.home-carrossel-item a > div:first-child{
+  overflow: hidden;
+}
+.home-carrossel-item img {
+  transition: 0.3s;
+}
+.home-carrossel-item:hover img{
+  transform: scale(1.1);
 }
 
 /* Responsivo */
