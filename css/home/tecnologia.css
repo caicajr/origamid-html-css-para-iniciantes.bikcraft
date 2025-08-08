@@ -14,6 +14,7 @@
   align-self: stretch;
 }
 .tecnologia-img img{
+  width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center left;
@@ -32,18 +33,8 @@
   margin-bottom: 32px;
 }
 
-.tecnologia-principal a {
-  display: inline-block;
+.tecnologia-principal > a {
   margin-bottom: 80px;
-  position: relative;
-}
-
-.tecnologia-principal a::after{
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: var(--p1);
 }
 
 .tecnologia-descricao {
@@ -59,27 +50,22 @@
 .tecnologia-descricao h4::before {
   content: "";
   display: block;
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   margin-bottom: 8px;
   background: url('../../img/icones/eletrica.svg');
+  background-size: contain;
 }
 
 .tecnologia-descricao li:not(:first-child) h4::before {
   background: url('../../img/icones/rastreador.svg');
+  background-size: contain;
 }
 
 .tecnologia-descricao h4 {
   margin-bottom: 8px;
 }
 
-/* Animações */
-.tecnologia-principal a:hover {
-  color: var(--w);
-}
-.tecnologia-principal a:hover::after{
-  background-color: var(--w);
-}
 
 /* Responsividade */
 @media (max-width: 800px) {
