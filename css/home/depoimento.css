@@ -1,0 +1,61 @@
+.home-depoimento {
+  margin-top: 120px;
+  background-color: var(--p1);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-height: 680px;
+}
+
+.depoimento-imagem img{
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+  object-fit: cover;
+}
+
+.depoimento-principal {
+  padding: 40px 40px 40px 0;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  gap: 20px;
+}
+
+.depoimento-texto {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: end;
+  align-items: flex-end;
+}
+
+.depoimento-texto p {
+  max-width: 40ch;
+  display: flex;
+}
+
+.depoimento-texto p::before, .depoimento-texto p::after {
+  content: '“';
+  color: var(--p2);
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.depoimento-texto p::before {
+  align-self: flex-start;
+}
+
+.depoimento-texto p::after {
+  align-self: flex-end;
+  transform: scale(-1, -1);
+}
+
+.depoimento-texto span {
+  width: 100%;
+  padding: 45px;
+}
+
+.depoimento-principal > :last-child {
+  align-self: flex-end;
+}
