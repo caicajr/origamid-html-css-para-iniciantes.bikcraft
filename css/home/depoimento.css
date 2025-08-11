@@ -53,10 +53,45 @@
 }
 
 .depoimento-texto span {
-  width: 100%;
+  /* width: 100%; */
   padding: 45px;
 }
 
 .depoimento-principal > :last-child {
   align-self: flex-end;
+}
+
+/* Responsividade */
+
+@media (max-width: 1200px) {
+  .depoimento-texto {
+    padding-top: 45px;
+  }
+}
+
+@media (max-width: 800px) {
+  .home-depoimento {
+    margin-top: 60px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 3fr;
+    justify-items: center;
+    gap: 20px;
+  }
+  .depoimento-principal img{
+    display: none;
+  }
+  .depoimento-principal {
+    padding: 0;
+  }
+  .depoimento-texto {
+    padding-top: 0;
+  }
+  .depoimento-texto span {
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin: 0 auto;
+  }
+  .depoimento-texto p {
+    margin: 0 auto;
+  }
 }
