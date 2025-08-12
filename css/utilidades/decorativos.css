@@ -5,3 +5,22 @@
   height: 8px;
   background-color: var(--p1);
 }
+
+@media (min-width: 1200px) { 
+  .decorativo-2-bottom-left{
+    position: relative;
+  }
+  .decorativo-2-bottom-left::before {
+    content: "";
+    display: block;
+    width: 52px;
+    height: 52px;
+    background-image: url('../../img/dec/bottom-left.svg');
+    position: absolute;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 40px;
+    margin-left: auto;
+  }
+}
