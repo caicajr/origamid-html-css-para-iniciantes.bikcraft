@@ -1,0 +1,21 @@
+.termos {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.termos > ul > li:not(:first-child){
+  margin-top: 48px;
+}
+
+.termos p {
+  max-width: 75ch;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .termos {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  } 
+}
