@@ -26,6 +26,12 @@
   object-fit:cover;
 }
 
+/* Estilos */
+
+.introducao-bg::after {
+  margin-bottom: 120px;
+}
+
 /* 1320 = 1200px do conteudo + 80px da imagem a mais 
         + 40px do padding à direita */
 @media (min-width: 1320px) { 
@@ -40,6 +46,8 @@
     padding-left: 60px; 
   } */
 }
+
+/* Responsividade */
 
 @media (max-width: 800px) {
   .introducao-bg {

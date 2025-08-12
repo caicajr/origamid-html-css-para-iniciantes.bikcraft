@@ -66,6 +66,11 @@
   margin-bottom: 8px;
 }
 
+/* Estilos */
+
+.tecnologia-bg::after {
+  margin-bottom: 80px;
+}
 
 /* Responsividade */
 @media (max-width: 800px) {
