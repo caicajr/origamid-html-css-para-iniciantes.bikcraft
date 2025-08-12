@@ -6,11 +6,11 @@
   background-color: var(--p1);
 }
 
-@media (min-width: 1200px) { 
+@media (min-width: 1400px) { 
   .decorativo-2-bottom-left{
     position: relative;
   }
-  .decorativo-2-bottom-left::before {
+  .decorativo-2-bottom-left::after{
     content: "";
     display: block;
     width: 52px;
