@@ -1,0 +1,100 @@
+.seguros-bg {
+  background-color: var(--c11);
+}
+
+.seguros {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.seguros-beneficios li:first-child, .seguros a {
+  margin-top: 32px;
+} 
+
+.seguros-beneficios li + li {
+  margin-top: 20px ;
+}
+
+.seguros > ul {
+  padding-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.seguros > ul > li {
+  background-color: var(--c12);
+  padding: 32px 32px 32px 64px;
+  border-radius: 5px;
+}
+
+.seguro-plano{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.seguro-plano :last-child {
+  text-align: end;
+  width: 100%;
+}
+
+/* Estilos */
+/* 
+@media (min-width: 1200px) { 
+  .seguros-bg{
+    position: relative;
+  }
+  .seguros-bg::before {
+    content: "";
+    display: block;
+    width: 52px;
+    height: 52px;
+    background-image: url('../../img/dec/bottom-left.svg');
+    position: absolute;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 40px;
+    margin-left: auto;
+  }
+} */
+
+.seguros-beneficios li {
+  position: relative;
+}
+.seguros-beneficios li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 12px;
+  height: 8px;
+  background-image: url('../../img/icones/lista.svg');
+  left: -20px;
+  top: 8px;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 800px){
+  .seguros {
+    padding-bottom: 60px;
+  }
+  .seguros > ul {
+    grid-template-columns: 1fr;
+  }
+  .seguros-beneficios li {
+    font: var(--font-2-xs);
+  }
+  .seguros-beneficios li + li {
+    margin-top: 12px ;
+  }
+  .seguros-beneficios li:first-child, .seguros a {
+    margin-top: 24px;
+  }
+  .seguros > ul {
+    padding-top: 30px;
+  }
+}
