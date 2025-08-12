@@ -81,7 +81,7 @@
     display: none;
   }
   .depoimento-principal {
-    padding: 0;
+    padding: 0 20px 0 20px;
   }
   .depoimento-texto {
     padding-top: 0;
@@ -93,5 +93,8 @@
   }
   .depoimento-texto p {
     margin: 0 auto;
+  }
+  .depoimento-texto p::before, .depoimento-texto p::after {
+    font-size: 3rem;
   }
 }
