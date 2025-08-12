@@ -11,3 +11,21 @@ a {
 img[src$=".jpg"] {
   border-radius: 5px;
 }
+
+/* Título das páginas */
+
+.pagina-interna-titulo-bg {
+  background-color: var(--c11);
+}
+
+.pagina-interna-titulo {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media (max-width: 800px) {
+  .pagina-interna-titulo {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+}
