@@ -41,25 +41,6 @@
 }
 
 /* Estilos */
-/* 
-@media (min-width: 1200px) { 
-  .seguros-bg{
-    position: relative;
-  }
-  .seguros-bg::before {
-    content: "";
-    display: block;
-    width: 52px;
-    height: 52px;
-    background-image: url('../../img/dec/bottom-left.svg');
-    position: absolute;
-    bottom: 0;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 40px;
-    margin-left: auto;
-  }
-} */
 
 .seguros-beneficios li {
   position: relative;
@@ -68,8 +49,8 @@
   content: "";
   display: block;
   position: absolute;
-  width: 12px;
-  height: 8px;
+  width: 13px;
+  height: 9px;
   background-image: url('../../img/icones/lista.svg');
   left: -20px;
   top: 8px;
