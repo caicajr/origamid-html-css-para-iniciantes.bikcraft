@@ -23,3 +23,11 @@
     padding: 40px;
   }
 }
+
+.decorativo-3 {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 10px;
+  background-image: url('../../img/icones/seta.svg');
+}
