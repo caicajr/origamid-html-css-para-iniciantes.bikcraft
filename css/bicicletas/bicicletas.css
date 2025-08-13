@@ -1,0 +1,111 @@
+.bicicletas {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.bicicletas-bg {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.bicicletas-bg:nth-child(even) {
+  background: linear-gradient(to right,transparent 20%, var(--c11) 20%);
+}
+
+.bicicletas-item{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.bicicletas-imagem {
+  position: relative;
+}
+
+.bicicletas-imagem img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bicicletas-imagem span{
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  padding: 8px 16px 8px 8px;
+  background-color: var(--c12);
+  border-radius: 5px 0px 0px 5px;
+}
+
+.bicicletas-conteudo {
+  align-self: center;
+}
+
+.bicicletas-conteudo > h2::before {
+  margin-bottom: 8px;
+}
+
+.bicicletas-conteudo > p {
+  margin-top: 20px;
+  max-width: 40ch;
+}
+
+.bicicletas-conteudo > div {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.bicicletas-conteudo li {
+  display: flex;
+  gap: 8px;
+}
+
+.bicicletas-conteudo li + li{
+  margin-top: 16px;
+}
+
+.bicicletas-conteudo img {
+  object-fit: contain;
+}
+
+.bicicletas-conteudo a {
+  place-self: end;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Responsividade */
+
+@media (max-width: 800px) {
+  .bicicletas-bg:nth-child(even) {
+    background: var(--c11);
+  }
+  .bicicletas {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .bicicletas-item{
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .bicicletas-conteudo > div {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .bicicletas-conteudo ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 8px;
+  }
+  .bicicletas-conteudo li + li{
+    margin-top: 0px;
+  }
+  .bicicletas-conteudo a {
+    place-self: start;
+    margin-top: 32px;
+  }
+}
