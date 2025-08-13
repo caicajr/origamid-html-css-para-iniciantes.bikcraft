@@ -23,6 +23,10 @@
   gap: 40px;
 }
 
+#seguros .seguros > ul {
+  padding-top: 0px;
+}
+
 .seguros > ul > li {
   background-color: var(--c12);
   padding: 32px 32px 32px 64px;
@@ -63,6 +67,9 @@
   .seguros {
     padding-bottom: 60px;
   }
+  #seguros .seguros {
+    padding-top: 0px;
+  }
   .seguros > ul {
     grid-template-columns: 1fr;
   }
@@ -75,7 +82,7 @@
   .seguros-beneficios li:first-child, .seguros a {
     margin-top: 24px;
   }
-  .seguros > ul {
+  #home .seguros > ul {
     padding-top: 30px;
   }
 }
