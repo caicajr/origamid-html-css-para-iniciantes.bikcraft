@@ -1,0 +1,57 @@
+.faq {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.perguntas {
+  margin-top: 90px;
+}
+
+.perguntas li{
+  padding: 20px;
+  position: relative;
+}
+
+.perguntas li:nth-child(odd) {
+  background-color: var(--c1);
+  border-radius: 5px;
+}
+
+.perguntas label {
+  padding-right: 60px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.perguntas p{
+  display: none;
+  max-width: 75ch;
+  padding-left: 21px;
+  padding-top: 16px;
+}
+
+.perguntas label::after{
+  content: "";
+  display: block;
+  width: 14px;
+  height: 6px;
+  background-image: url('../../img/icones/seta-abrir.svg');
+  position: absolute;
+  right: 30px;
+  padding: auto 0px;
+  transform: scale(1, -1);
+  transition: 0.2s;
+}
+
+/* Animações */
+.faq-checkbox input{
+  display: none;
+}
+.faq-checkbox input:checked ~ p {
+  display: block;
+}
+.faq-checkbox input:checked ~ label::after {
+  transform: scale(1, 1);
+}
