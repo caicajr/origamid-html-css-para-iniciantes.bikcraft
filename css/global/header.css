@@ -36,7 +36,7 @@
   transition: width 0.4s ease;
 }
 
-.header-menu a:hover::before{
+.header-menu a:hover::before, .header-menu a.ativo::before{
   width: 100%;
 }
 /* Responsividade */
