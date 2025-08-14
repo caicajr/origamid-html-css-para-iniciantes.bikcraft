@@ -1,0 +1,115 @@
+.bicicleta-container {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+  padding-bottom: 60px;
+}
+
+.bicicleta-imagens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bicicleta-imagens img {
+  flex: 1;
+  min-width: 200px;
+}
+
+.bicicleta-imagens img:first-child {
+  min-width: 100%;
+}
+
+.bicicleta-conteudo > p {
+  margin-bottom: 32px;
+}
+
+.bicicleta-comprar {
+  display: grid;
+  grid-template-columns: max-content auto;
+  gap: 8px 12px;
+  margin-bottom: 40px;
+}
+
+.bicicleta-comprar a {
+  grid-row: span 2;
+  place-self: center start;
+}
+
+.bicicleta-comprar span {
+  place-self: center start;
+  display: flex;
+  gap: 8px;
+  padding: 4px 8px;
+  background-color: var(--c12);
+  border-radius: 5px;
+}
+
+.bicicleta-comprar span img {
+  object-fit: contain;
+}
+
+.bicicleta-conteudo h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.015em;
+  margin-bottom: 12px;
+}
+
+.bicicleta-ficha,
+.bicicleta-informacoes {
+  padding: 32px;
+  background-color: var(--c12);
+  border-radius: 5px;
+}
+
+.bicicleta-informacoes {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 40px;
+}
+
+.bicicleta-informacoes img {
+  width: 24px;
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+
+.bicicleta-informacoes h3 {
+  margin-bottom: 8px;
+}
+
+.bicicleta-ficha li:not(:last-child) {
+  padding-bottom: 5px;
+  border-bottom: 1px var(--c11) solid;
+  margin-bottom: 6px;
+}
+
+.bicicleta-ficha li {
+  display: flex;
+  justify-content:space-between;
+}
+
+@media (max-width: 800px) {
+  .bicicleta-container {
+    padding-bottom: 30px;
+    grid-template-columns: 1fr; 
+  }
+  .bicicleta-imagens {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow: auto;
+    padding-bottom: 20px;
+  }
+  .bicicleta-imagens img:first-child, .bicicleta-imagens img{
+    min-width: 340px;
+  }
+}
+
+@media (max-width: 600px) {
+  .bicicleta-comprar, .bicicleta-informacoes {
+    grid-template-columns: 1fr;
+  }
+}
