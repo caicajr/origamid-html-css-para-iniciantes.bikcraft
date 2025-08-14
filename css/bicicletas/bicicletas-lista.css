@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+[id ^= "bicicleta-"] .bic-lista-bicicletas {
+  padding: 90px 20px 120px;
+}
+
 .bic-lista-bic-titulo {
   margin-bottom: 40px;
 }
@@ -11,6 +15,7 @@
   max-width: 1460px;
   margin: 0 auto;
   padding-bottom: 20px;
+  justify-content: safe center;
   display: flex;
   overflow: auto;
   gap: 40px;
@@ -70,5 +75,8 @@
   }
   .bic-lista-carrossel {
     gap: 20px;
+  }
+  [id ^= "bicicleta-"] .bic-lista-bicicletas {
+    padding: 45px 20px 60px;
   }
 }
