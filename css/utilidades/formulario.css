@@ -1,0 +1,54 @@
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.formulario .colToda {
+  grid-column: 1/-1;
+}
+
+.formulario button {
+  place-self: start;
+  grid-column: 1/-1;
+}
+
+.formulario label {
+  display: block;
+  margin-bottom : 4px;
+  font: var(--font-1-s);
+  color: var(--c11);
+}
+
+.formulario input[type="text"], 
+.formulario input[type="email"], 
+.formulario textarea {
+  font: var(--font-2-s);
+  color: var(--c11);
+  width: 100%;
+  padding: 12px;
+  background-color: var(--c1);
+  border: 1px var(--c2) solid;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Estilos e animações*/
+
+.formulario input[type="text"]:focus, 
+.formulario input[type="email"]:focus, 
+.formulario textarea:focus {
+  outline: none;
+  background-color: var(--w);
+  border: 1px var(--p1) solid;
+  box-shadow: 0 0 0 2px #fea;
+}
+
+
+/* Responsivo */
+
+@media (max-width: 600px) {
+  .formulario {
+    grid-template-columns: 1fr;
+  }
+}
