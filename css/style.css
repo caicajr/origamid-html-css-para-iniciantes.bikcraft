@@ -33,5 +33,9 @@
 @import './seguros/faq.css';
 @import './seguros/vantagens.css';
 
+/* Contato */
+@import './contato/contato.css';
+@import './utilidades//formulario.css';
+
 /* Termos */
 @import './termos/termos.css';
