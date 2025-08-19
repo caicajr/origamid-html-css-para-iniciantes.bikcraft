@@ -35,7 +35,8 @@
 
 /* Contato */
 @import './contato/contato.css';
-@import './utilidades//formulario.css';
+@import './utilidades/formulario.css';
+@import './contato/lojas.css';
 
 /* Termos */
 @import './termos/termos.css';
