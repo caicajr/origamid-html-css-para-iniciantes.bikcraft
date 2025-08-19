@@ -1,11 +1,3 @@
-#contatos {
-  background-color: var(--c1);
-}
-
-.contato-bg {
-  background: linear-gradient(to bottom, var(--c11) 50%, transparent 0%);
-}
-
 .contato {
   display: grid;
   grid-template-columns: 5fr 7fr;

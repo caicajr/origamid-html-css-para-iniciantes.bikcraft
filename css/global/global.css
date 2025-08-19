@@ -12,6 +12,14 @@ img[src$=".jpg"] {
   border-radius: 5px;
 }
 
+#contatos, #orcamento {
+  background-color: var(--c1);
+}
+
+.meio-c11-bg {
+  background: linear-gradient(to bottom, var(--c11) 50%, transparent 0%);
+}
+
 /* Título das páginas */
 
 .pagina-interna-titulo-bg {
