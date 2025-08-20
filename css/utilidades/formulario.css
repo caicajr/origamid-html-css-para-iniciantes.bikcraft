@@ -33,15 +33,53 @@
   box-sizing: border-box;
 }
 
+.formulario .termos-checkbox {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.formulario .termos-checkbox a {
+  text-decoration: underline;
+}
+
+.formulario input[type="checkbox"] {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+  border: 1px var(--c4) solid;
+  background-color: var(--c1);
+  cursor: pointer;
+}
+
+
 /* Estilos e animações*/
 
 .formulario input[type="text"]:focus, 
 .formulario input[type="email"]:focus, 
-.formulario textarea:focus {
+.formulario textarea:focus,
+.formulario input[type="checkbox"]:checked {
   outline: none;
   background-color: var(--w);
   border: 1px var(--p1) solid;
   box-shadow: 0 0 0 2px #fea;
+}
+
+.formulario input[type="checkbox"]:checked {
+  background-image: url("data:image/svg+xml,%3Csvg width='13' height='9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.707.293a1 1 0 0 1 0 1.414l-7 7a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L5 6.586 11.293.293a1 1 0 0 1 1.414 0Z' fill='%23FB0'/%3E%3C/svg%3E") ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  border: 1px var(--p1) solid;
+  box-shadow: none;
+}
+
+.formulario .termos-checkbox a:hover {
+  color: var(--p1);
 }
 
 
