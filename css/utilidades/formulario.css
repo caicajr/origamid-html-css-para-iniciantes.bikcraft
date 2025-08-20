@@ -37,7 +37,7 @@
   display: flex;
   gap: 12px;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .formulario .termos-checkbox a {
@@ -48,8 +48,9 @@
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-  width: 32px;
+  min-width: 32px;
   height: 32px;
+  margin: 0;
   border-radius: 5px;
   border: 1px var(--c4) solid;
   background-color: var(--c1);
@@ -88,5 +89,8 @@
 @media (max-width: 600px) {
   .formulario {
     grid-template-columns: 1fr;
+  }
+  .formulario input[type="checkbox"] {
+    transform: scale(.8);
   }
 }
