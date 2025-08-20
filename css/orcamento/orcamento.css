@@ -1,0 +1,190 @@
+#orcamento-bikcraft, 
+#orcamento-seguro,
+.orcamento-conteudo label span,
+.orcamento-conteudo > div > div {
+  display: none;
+}
+.orcamento-tipo > #bikcraft:checked ~ #orcamento-bikcraft,
+.orcamento-tipo > #seguro:checked ~ #orcamento-seguro,
+.orcamento-conteudo input:checked + label span{
+  display: block;
+}
+
+.orcamento {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  margin-bottom: 120px;
+}
+
+.orcamento h2 {
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.orcamento h2::before {
+  content: "";
+  width: 4px;
+  height: 8px;
+  background-color: var(--p1);
+  position: absolute;
+  left: -12px;
+}
+
+.orcamento-tipo, .orcamento-dados {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  padding: 60px;
+}
+
+.orcamento-tipo {
+  background-color: var(--c12);
+  border-radius: 5px 0 0 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: start;
+  gap: 20px;
+}
+
+.orcamento-tipo > * {
+  grid-column: 1/-1;
+}
+
+.orcamento-tipo input {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.orcamento-tipo label {
+  font: 400 1rem/1.5 "Poppins", sans-serif;
+  color: var(--c4);
+  background-color: var(--c10);
+  padding: 12px 16px;
+  border: 1px transparent solid;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+.orcamento-tipo label:hover {
+  background-color: var(--c9);
+}
+
+.orcamento-tipo > label {
+  border-radius: 5px;
+  grid-column: initial;
+  margin-bottom: 40px;
+}
+
+.orcamento-tipo > input:focus + label {
+  border: 1px var(--p1) solid;
+  box-shadow: 0 0 0 2px #fea;
+}
+
+.orcamento-tipo input:checked + label {
+  background-color: var(--w);
+  color: var(--c11);
+}
+
+.orcamento-tipo label:before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--c6);
+  border-radius: 50%;
+  box-sizing: border-box;
+  margin-right: 8px;
+}
+
+.orcamento-tipo input:checked + label:before {
+  border-color: var(--c7);
+  box-shadow:  inset 0 0 0 3px var(--w), inset 0 0 0 5px var(--c7);
+}
+
+.orcamento-conteudo h2 {
+  margin-bottom: 24px;
+}
+
+.orcamento-conteudo > div {
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 1px transparent solid;
+  overflow: hidden;
+}
+
+.orcamento-conteudo > div:focus-within {
+  border: 1px var(--p1) solid;
+  box-shadow: 0 0 0 2px #fea;
+}
+.orcamento-conteudo input:checked + label + div {
+  background-color: var(--w);
+  padding: 4px 16px 16px 36px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: center;
+}
+
+.orcamento-conteudo li {
+  font: var(--font-1-xs);
+  color: var(--c8);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.orcamento-conteudo li + li {
+  margin-top: 8px;
+}
+
+.orcamento-conteudo li img {
+  width: 16px;
+  object-fit: contain;
+}
+
+.orcamento-dados {
+  background-color: var(--w);
+  border-radius: 0 5px 5px 0;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 1200px) {
+  .orcamento-tipo, .orcamento-dados {
+    padding: 30px;  
+  }
+}
+
+@media (max-width: 800px) {
+  .orcamento {
+    margin-bottom: 60px;
+    grid-template-columns: 1fr;
+  }
+  .orcamento-tipo > label {
+    margin-bottom: 0px;
+  }
+  .orcamento-tipo {
+    border-radius: 5px 5px 0 0;
+    box-shadow: none;
+  }
+  .orcamento-dados {
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .orcamento-conteudo input:checked + label + div {
+    grid-template-columns: 1fr;
+    padding: 4px 16px 16px 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .orcamento-tipo > label {
+    grid-column: 1/-1;
+  }
+}
