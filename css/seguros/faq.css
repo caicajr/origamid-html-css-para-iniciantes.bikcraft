@@ -7,17 +7,18 @@
   margin-top: 90px;
 }
 
-.perguntas li{
+.perguntas > div {
   padding: 20px;
   position: relative;
 }
 
-.perguntas li:nth-child(odd) {
+.perguntas > div:nth-child(odd) {
   background-color: var(--c1);
   border-radius: 5px;
 }
 
-.perguntas label {
+.perguntas button {
+  width: 100%;
   padding-right: 60px;
   display: flex;
   align-items: center;
@@ -25,19 +26,23 @@
   cursor: pointer;
 }
 
-.perguntas p{
+.perguntas dd {
   display: none;
   max-width: 75ch;
   padding-left: 21px;
   padding-top: 16px;
 }
 
-.perguntas label::after{
+.perguntas dd.faq-ativo {
+  display: block;
+}
+
+.perguntas button::after {
   content: "";
   display: block;
   width: 14px;
   height: 6px;
-  background-image: url('../../img/icones/seta-abrir.svg');
+  background-image: url("../../img/icones/seta-abrir.svg");
   position: absolute;
   right: 30px;
   padding: auto 0px;
@@ -45,13 +50,6 @@
   transition: 0.2s;
 }
 
-/* Animações */
-.faq-checkbox input{
-  display: none;
-}
-.faq-checkbox input:checked ~ p {
-  display: block;
-}
-.faq-checkbox input:checked ~ label::after {
+.perguntas button[aria-expanded="true"]::after {
   transform: scale(1, 1);
 }
