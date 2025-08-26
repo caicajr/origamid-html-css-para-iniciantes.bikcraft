@@ -27,13 +27,15 @@
 }
 
 .perguntas dd {
-  display: none;
   max-width: 75ch;
   padding-left: 21px;
   padding-top: 16px;
 }
 
-.perguntas dd.faq-ativo {
+.js .perguntas dd {
+  display: none;
+}
+.js .perguntas dd.faq-ativo {
   display: block;
 }
 
