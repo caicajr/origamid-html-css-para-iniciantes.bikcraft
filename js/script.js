@@ -66,3 +66,6 @@ const mainImg = galeria.shift();
 const minWidth = "800px";
 
 if (galeria.length && mainImg) galeriaTroca(galeria, mainImg, minWidth);
+
+// Acionando plugin simple-anime
+if (SimpleAnime) new SimpleAnime();
