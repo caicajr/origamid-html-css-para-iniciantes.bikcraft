@@ -5,12 +5,12 @@
 @import "./global/footer.css";
 
 /* Utilidades */
+@import "./utilidades/animar.css";
 @import "./utilidades/cores.css";
 @import "./utilidades/fontes.css";
 @import "./utilidades/outras_componentes.css";
 @import "./utilidades/botao.css";
 @import "./utilidades/decorativos.css";
-@import "./utilidades/animar.css";
 
 /* Home */
 @import "./home/introducao.css";
