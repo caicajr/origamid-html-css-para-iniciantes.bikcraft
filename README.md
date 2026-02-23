@@ -11,7 +11,7 @@ O objetivo do projeto foi criar um site profissional para uma loja fictícia de 
 
 O layout principal foi construido (não por mim) utilizando o figma. Entretanto, o layout para  tipos de telas menores que um desktop é diferente e não aparece no arquivo do figma. 
 
-Você pode visualizar o site [aqui](https://caicajr.github.io/origamid-html-css-para-iniciantes.bikcraft).
+Você pode visualizar o site [aqui](https://caiacajr.github.io/origamid-html-css-para-iniciantes.bikcraft).
 
 ## Principal Aprendizado
 
